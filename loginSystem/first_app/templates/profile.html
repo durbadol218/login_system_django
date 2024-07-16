@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Profile Page {% endblock title%}
+{% block content %}
+<h1>Hello {{user}}!</h1>
+<h2>Welcome to your profile🙂</h2>
+
+<a href="{% url 'passwordChange' %}" class="btn btn-outline-dark">Change Your Password</a>
+<a href="{% url 'setPasswordChange' %}" class="btn btn-outline-dark">Change Your Password Without Old Password</a>
+
+<br><hr>
+<a href="{% url 'updateUser' %}" class="btn btn-outline-dark">Update Your Profile!</a>
+
+{% endblock content %}
